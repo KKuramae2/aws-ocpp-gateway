@@ -56,6 +56,7 @@ export class AwsOcppGatewayStack extends cdk.Stack {
         {
           name: 'public',
           subnetType: ec2.SubnetType.PUBLIC,
+          mapPublicIpOnLaunch: false,
         },
         {
           name: 'private',
